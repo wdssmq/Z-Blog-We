@@ -1,0 +1,51 @@
+name: Parse Issues To JSON
+
+on:
+  issues:
+    types: [opened, edited, labeled, unlabeled]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: issues-to-json-${{ github.event.issue.number || github.event.number }}
+  cancel-in-progress: true
+
+jobs:
+  parse-and-sync:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      # Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      # Run Python script
+      - name: Validate or sync issue data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          GITHUB_EVENT_PATH: ${{ github.event_path }}
+        run: |
+          python scripts/issues_to_json.py
+
+      # Commit changes if any
+      - name: Commit changes
+        run: |
+          if git diff --quiet -- data/issues; then
+            echo "No data changes."
+            exit 0
+          fi
+
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/issues/*.json
+          git commit -m "chore: update issues json"
+          git push
