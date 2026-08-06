@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "dedupe_key": "rss|https://www.wdssmq.com/feed.php",
+    "type": "rss",
+    "review": "pick",
+    "name": "沉冰浮水",
+    "description": "置百丈玄冰而崩裂，掷须臾池水而漂摇。",
+    "tags": [
+      "折腾",
+      "Z-Blog",
+      "纠结"
+    ],
+    "rss_url": "https://www.wdssmq.com/feed.php",
+    "git_repo_url": "",
+    "issue": {
+      "number": 1,
+      "title": "[RSS] 沉冰浮水",
+      "url": "https://github.com/wdssmq/Z-Blog-We/issues/1",
+      "updated_at": "2026-08-06T14:00:46Z"
+    },
+    "source": {
+      "event": "issues",
+      "from": "issue"
+    },
+    "canonical_url": "https://www.wdssmq.com/feed.php",
+    "collected_at": "2026-08-06T14:00:56Z"
+  }
+]
