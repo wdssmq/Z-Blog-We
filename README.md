@@ -7,9 +7,8 @@
 
 ### 提交流程
 
-[New Issue](https://github.com/wdssmq/Z-Blog-We/issues/new "New Issue")
-
-1. 新建 issue，标题必须以 `[RSS]` 或 `[APP]` 开头。
+1. 新建 issue，标题必须以 `[RSS]` 或 `[APP]` 开头。「[New Issue](https://github.com/wdssmq/Z-Blog-We/issues/new/choose "New Issue")
+」
 2. 使用对应模板填写数据。
 3. 维护者通过标签审核数据：
 	- `pick`: 接受并额外标记
