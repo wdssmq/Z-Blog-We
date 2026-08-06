@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Submission Rules
+    url: https://github.com/
+    about: 请按模板提交 RSS 或 APP 数据。

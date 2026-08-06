@@ -1,0 +1,51 @@
+name: APP Submit
+description: 提交 Z-BlogPHP 主题或插件信息
+title: "[APP] "
+labels:
+  - app
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Data Type
+      description: 必须与标题前缀一致
+      options:
+        - app
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: App Name
+      description: 应用名称
+      placeholder: Awesome Plugin
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: 应用描述
+      placeholder: 简短说明功能
+    validations:
+      required: true
+
+  - type: textarea
+    id: tags
+    attributes:
+      label: Tags
+      description: 最多 4 个，首个必须是 plugin 或 theme
+      placeholder: plugin, seo, tool
+    validations:
+      required: true
+
+  - type: input
+    id: git_repo_url
+    attributes:
+      label: Git Repo URL
+      description: Git 仓库地址（http/https）
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true

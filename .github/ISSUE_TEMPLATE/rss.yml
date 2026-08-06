@@ -1,0 +1,51 @@
+name: RSS Submit
+description: 提交博客 RSS 信息
+title: "[RSS] "
+labels:
+  - rss
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Data Type
+      description: 必须与标题前缀一致
+      options:
+        - rss
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Blog Name
+      description: 博客名称
+      placeholder: My Blog
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: 博客描述
+      placeholder: 简短描述博客内容
+    validations:
+      required: true
+
+  - type: textarea
+    id: tags
+    attributes:
+      label: Tags
+      description: 最多 4 个，使用逗号分隔
+      placeholder: tech, zblog, notes
+    validations:
+      required: true
+
+  - type: input
+    id: rss_url
+    attributes:
+      label: RSS URL
+      description: RSS 地址（http/https）
+      placeholder: https://example.com/rss.xml
+    validations:
+      required: true
