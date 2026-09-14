@@ -5,6 +5,16 @@
 
 你可以向本仓库提交你的 RSS 或 Z-Blog 应用（插件/主题）；
 
+## 展示链接
+
+- 收录后姑且可以在展示链接中看到；
+- 以及会给予一定程度的修改建议；
+- 已收录内容也仅供参考；
+
+> Z-Blog-We · 折腾 Z-Blog 的我们
+>
+> [https://astro-zbp-we.pages.dev/](https://astro-zbp-we.pages.dev/ "Z-Blog-We · 折腾 Z-Blog 的我们")
+
 ### 提交流程
 
 1. 新建 issue，标题必须以 `[RSS]` 或 `[APP]` 开头。「[New Issue](https://github.com/wdssmq/Z-Blog-We/issues/new/choose "New Issue")
