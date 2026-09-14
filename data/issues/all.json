@@ -1,5 +1,32 @@
 [
   {
+    "dedupe_key": "app|https://github.com/361611074/media_library",
+    "type": "app",
+    "review": "pick",
+    "name": "媒体库 · 相册式附件管理",
+    "description": "以相册（网格）形式集中管理 Z-BlogPHP 的图片与附件，补齐系统默认附件管理在筛选、浏览、维护上的不足：按文章分类（含子分类）/ 类型 / 上传月份 / 上传者 / 是否已关联多维筛选，拖拽与多选上传、替换文件（URL 不变）、详情侧栏编辑与一键复制 URL/HTML/Markdown、批量删除与批量关联、灯箱浏览。数据查询全部使用系统 SQL 构造器，不创建数据表，卸载不删任何附件。兼容 Z-BlogPHP 1.7.x（MySQL / SQLite / PostgreSQL）。",
+    "tags": [
+      "plugin",
+      "media",
+      "附件管理",
+      "相册"
+    ],
+    "rss_url": "",
+    "git_repo_url": "https://github.com/361611074/media_library",
+    "issue": {
+      "number": 2,
+      "title": "[APP] 媒体库 · 相册式附件管理",
+      "url": "https://github.com/wdssmq/Z-Blog-We/issues/2",
+      "updated_at": "2026-09-14T15:41:34Z"
+    },
+    "source": {
+      "event": "issues",
+      "from": "issue"
+    },
+    "canonical_url": "https://github.com/361611074/media_library",
+    "collected_at": "2026-09-14T15:41:42Z"
+  },
+  {
     "dedupe_key": "rss|https://www.wdssmq.com/feed.php",
     "type": "rss",
     "review": "pick",
